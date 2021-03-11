@@ -14,5 +14,10 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "parzterraform"
-  location = "westus2"
+  location = "eastus"
+
+  tags     = {
+        "Environment" = "Dev"
+        "Team"        = "InfosysTestInfra"
+    }
 }
