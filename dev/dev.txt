@@ -1,0 +1,10 @@
+# Devtfvars
+application = "cdemo"
+environment = "dev"
+location = "westeurope"
+
+default_tags = {
+    application = "cdemo"
+    environment = "Dev"
+    Deployed_by ="Terraform"
+}
