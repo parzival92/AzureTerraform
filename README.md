@@ -34,3 +34,8 @@ terraform plan -var 'prefix=parz' -var 'location=westus2'
 terraform apply -var 'prefix=parz' -var 'location=westus2' -auto-approve
 terraform destroy -var 'prefix=parz' -var 'location=westus2' -auto-approve
 ```
+- Deploy keyvault 
+```
+terraform plan -var 'keyVaultName=kvtfborg' -var 'sku_name=standard' -var 'prefix=parz'
+terraform apply -var 'keyVaultName=kvtfborg' -var 'sku_name=standard' -auto-approve
+```
