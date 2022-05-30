@@ -2,6 +2,11 @@ provider "azurerm" {
   features {}
 }
 
+resource "azurerm_resource_group" "example" {
+  name     = "${var.prefix}-resources"
+  location = var.location
+}
+
 resource "azurerm_virtual_network" "example" {
   name                = "${var.prefix}-network"
   resource_group_name = azurerm_resource_group.example.name
